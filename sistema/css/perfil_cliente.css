@@ -1,0 +1,79 @@
+/* Cambiar fuente y tamaño globalmente */
+form {
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a todo el documento */
+    font-size: 1rem; /* Tamaño de fuente global */
+    margin-top: none;
+}
+
+form h1{
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a todo el documento */
+    font-size: 2.1rem; /* Tamaño de fuente global */
+    font-weight: bold;
+}
+
+
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+main {
+    margin-top: 100px;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[readonly] {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+input[type="submit"] {
+    font-weight: 10px !important;
+    padding: 12px 30px;
+    background-color: #5bc0de; /* Azul claro para el botón actualizar */
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 30%;
+    
+}
+
+input[type="submit"]:hover {
+    font-weight: 10px;
+    background-color: black;
+    color: white;
+}
+

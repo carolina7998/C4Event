@@ -1,0 +1,153 @@
+/* BARRA NAVEGACION
+.navbar {
+    background-color: rgb(194,191,203);
+    padding: 10px 20px;
+    height: 70px;
+}
+.navbar-brand img {
+    height: 70px;
+}
+.header-content {
+    text-align: left;
+    margin-top: 50px;
+}*/
+
+body{
+    margin: 0;
+    
+    background-color: rgb(250, 246, 244);
+}
+
+
+.table {
+  background-color: white;
+}
+
+.table tbody tr{
+  background-color: white;
+}
+
+
+.table tbody tr:nth-child(odd) {
+  background-color: white; /* Para eliminar el color de las filas impares */
+}
+
+
+.table thead tr {
+  background-color: #af7f4c !important; /* Cambia este color por el que prefieras */
+  color: white; /* Color del texto */
+}
+
+.table thead th {
+  border-color: #0a0b0a; /* Opcional: cambiar el color del borde */
+}
+
+
+
+.fondo{
+    width: 1270px;
+    padding: 20px;
+    background-color: rgb(241, 242, 242);
+    border: 1px solid rgb(59, 58, 58);
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+
+
+/*span {
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+    color: #0a0a0a;
+    font-size: 17px;
+    font-family: 'GothamBook';
+    /*text-transform: uppercase;*
+    margin-left: 30px;
+}
+
+.optionsBar p {
+    color: #080808;
+    font-size: 17px;
+    font-family: 'GothamBook';
+    /*text-transform: uppercase;*
+    margin-left: 30px;
+}
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.close{
+	width: 25px;
+    height: 25px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 40px;
+}
+
+
+
+
+
+ 
+
+  /*boton salir  
+  .btn{
+    height: 45px;
+    width: 120px;
+    font-size: 18px;
+    font-weight: 550;
+    text-transform: capitalize;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    background: linear-gradient(to right,hsl(173, 76%, 36%),hsl(180, 1%, 43%));
+    border: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* From  SALIR BUTTON Uiverse.io by satyamchaudharydev *
+.btn {
+  --primary-color: #16a291;
+  --secondary-color: #fff;
+  --third-color : #6d6f6f;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 0.6em 1.8em;
+  background: linear-gradient(to right, var(--primary-color),var(--third-color));
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+

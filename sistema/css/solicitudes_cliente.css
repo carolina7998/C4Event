@@ -1,0 +1,64 @@
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-light-blue {
+    background-color: #5bc0de !important; /* Azul claro */
+    color: black !important; /* Texto en negro */
+    border: none; /* Elimina el borde si es necesario */
+}
+
+.btn-light-blue:hover {
+    background-color: #31b0d5 !important; /* Azul más oscuro al pasar el ratón */
+    color: white !important; /* Texto blanco al pasar el ratón */
+}
+
+
+/* Cambiar fuente y tamaño globalmente */
+body {
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a todo el documento */
+    font-size: 1rem; /* Tamaño de fuente global */
+}
+
+/* Cambiar la fuente y tamaño de la tabla */
+table {
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a las tablas */
+    font-size: 1.05rem; /* Tamaño de la fuente en las tablas */
+    font-weight: 450;
+}
+
+/* Cambiar la fuente y tamaño de los encabezados de la tabla */
+table thead th {
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem; /* Tamaño de la fuente en los encabezados */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Cambiar la fuente y tamaño en botones */
+.btn {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+/* Cambiar la fuente y tamaño del modal */
+.modal-body {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: 530;
+}
+
+/* Personalizar el tamaño del título en el modal */
+.modal-title {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}

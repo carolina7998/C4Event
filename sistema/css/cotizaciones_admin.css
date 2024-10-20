@@ -1,0 +1,139 @@
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/*Estilos para manejar una sola dimension botones ESTADO*/
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#comprobanteFrame {
+    width: 100% !important;
+    height: 500px !important;
+    border: none;
+}
+.estado-boton {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+/* Estilos para los botones de estado */
+.estado-boton {
+width: 120px;
+height: 40px;
+text-align: center;
+display: inline-block;
+white-space: nowrap;
+color: white !important; /* Texto en blanco */
+border: none;
+border-radius: 5px;
+transition: background-color 0.3s; /* Suavizar el cambio de color */
+}
+
+/* Estado Pendiente */
+.estado-pendiente {
+background-color: #e69808 !important; /* Naranja suave */
+}
+.estado-pendiente:hover {
+background-color: #FFB347 !important; /* Naranja más oscuro */
+color: black !important;
+}
+
+/* Estado Aprobado */
+.estado-aprobado {
+background-color: #4682B4 !important; /* Azul claro */
+}
+.estado-aprobado:hover {
+background-color: #87CEFA !important; /* Azul más oscuro */
+color: black !important;
+}
+
+/* Estado Pagada */
+.estado-pagada {
+background-color: #32CD32 !important; /* Verde claro */
+}
+.estado-pagada:hover {
+background-color: #90EE90 !important; /* Verde más oscuro */
+color: black !important;
+}
+
+/* Estado Rechazada */
+.estado-rechazada {
+background-color: #FF6F6F !important; /* Rojo claro */
+color: #000; /* Texto en negro para contraste */
+}
+.estado-rechazada:hover {
+background-color: #FFCCCB !important; /* Rojo más oscuro */
+color: black !important;
+}
+
+
+.btn-pago{
+border-radius: 3px;
+background-color: #32c9c9;
+border-color: #32c9c9 ;
+color: white;
+width: 4rem;
+height: 2rem;
+}
+
+.btn-pago:hover {
+background-color: #32c9c9;
+; /* Rojo más oscuro */
+}
+
+
+
+
+/* Cambiar fuente y tamaño globalmente */
+body {
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a todo el documento */
+    font-size: 1rem; /* Tamaño de fuente global */
+}
+
+/* Cambiar la fuente y tamaño de la tabla */
+table {
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a las tablas */
+    font-size: 1.05rem; /* Tamaño de la fuente en las tablas */
+    font-weight: 450;
+}
+
+/* Cambiar la fuente y tamaño de los encabezados de la tabla */
+table thead th {
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem; /* Tamaño de la fuente en los encabezados */
+    font-weight: bold;
+    
+}
+
+/* Cambiar la fuente y tamaño en botones */
+.btn {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+/* Cambiar la fuente y tamaño del modal */
+.modal-body {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: 530;
+}
+
+/* Personalizar el tamaño del título en el modal */
+.modal-title {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}

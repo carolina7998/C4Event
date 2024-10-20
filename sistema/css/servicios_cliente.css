@@ -1,0 +1,349 @@
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fecha-no-disponible {
+    background-color: #ffcccc; /* Fondo rojo claro */
+}
+
+body{
+    background-color: beige;
+}
+
+/* Flechas para visualizar los servicios */
+.arrow-left, .arrow-right{
+    --primary-color: #16a291;
+    --secondary-color: #fff;
+    --third-color : #6d6f6f;
+    --hover-color: #111;
+    --arrow-width: 4px;
+    --arrow-stroke: 2px;
+    border-color: 2px #0c0a0a solid ;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    padding: 0.4em 0.4em;
+    background: linear-gradient(to right, var(--primary-color),var(--third-color));
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;            
+}
+
+.btn-seleccion {
+    --primary-color: #16a291;
+    --secondary-color: #fff;
+    --third-color : #6d6f6f;
+    --hover-color: #111;
+    --arrow-width: 7px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    padding: 0.6em 1.8em;
+    background: linear-gradient(to right, var(--primary-color),var(--third-color));
+    display: flex;
+    transition: 0.2s background;
+    justify-content: center!important;
+    gap: 0.6em;
+    font-weight: bold;
+}
+
+
+
+.info-reserva {
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.input [type="number"]{
+   max-width: 2rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: black;
+    background-color: beige;
+}
+
+hr {
+    margin-top: 1rem;
+    background: black;
+}
+
+.form-control {
+    width: 9rem;
+    height: 2.5rem;
+    margin-right: 4rem;
+}
+
+
+.service-container {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Asegura que los elementos no se envuelvan a una nueva línea */
+    padding-left: 1rem;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+
+/*.service-title{
+    height: 15px; /* Altura fija para el contenedor del título *
+    word-wrap: break-word;
+    margin-top:auto;
+}*/
+
+.service-box {
+    flex: 1 1 calc(33.333% - 15px); /* Cada servicio ocupa un tercio de la fila */
+    max-width: calc(33.333% - 15px); /* Limita el ancho máximo a un tercio de la fila */
+    box-sizing: border-box; /* Asegura que el padding no expanda el ancho */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-box img {
+    max-width: 100%;
+    border-radius: 5px;
+    max-height: 200px;
+    height: 10rem;
+}
+
+/*.service-box h4 {
+    font-size: 1.1rem;
+    text-align: center;
+    color: red;
+}*/
+
+.service-details {
+    display: none;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.service-details input,
+.service-details textarea {
+    width: 100%;  /* Ajustar al ancho completo del contenedor */
+    height: 2rem; /* Asigna la altura uniforme */
+    margin-bottom: 10px; /* Un pequeño margen inferior para separarlos */
+    resize: none; /* Evita que el textarea sea redimensionable */
+}
+
+.crud-box {
+    padding: 20px;
+    display: none; /* Ocultamos la sección del CRUD inicialmente */
+}
+
+.crud-table {
+    width: 100%;
+}
+
+.crud-table th,
+.crud-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.button-category {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: flex-end;
+}
+
+.title-category {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "bodoni";
+    color: rgb(88, 59, 31);
+    justify-content: flex-start;
+}
+
+.container{
+    padding:0;
+}
+
+#service-container-wrapper {
+    transition: all 0.5s ease;
+}
+
+#crud-container {
+    display: none;
+    transition: all 0.5s ease;
+    margin-top:1.5rem;          
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+.col-md-7 {
+    width: 58.33333333%;
+}
+
+.col-md-5 {
+    width: 41.66666667%;
+}
+
+
+
+.category-container h5{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "bodoni";
+    color: rgb(88,59,31);
+}
+
+.form-info{
+    background-color:rgb(234,230,225) ;
+    border-color: grey;
+    width: 10rem;
+    border-radius: 5px;
+    height: 2rem;
+    width: 8rem;
+    
+}
+
+label{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "bodoni";
+    color: rgb(88,59,34);
+}
+
+
+.info-reserva label{
+    text-align: center;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    font-family: "bodoni";
+    color: rgb(88,59,34);
+}
+
+
+
+
+/* Boton eliminar del crud */ 
+.bin-button {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 55px;
+height: 55px;
+border-radius: 15px;
+background-color: rgb(255, 95, 95);
+cursor: pointer;
+border: 3px solid rgb(255, 201, 201);
+transition-duration: 0.3s;
+}
+.bin-bottom {
+width: 15px;
+}
+.bin-top {
+width: 17px;
+transform-origin: right;
+transition-duration: 0.3s;
+}
+.bin-button:hover .bin-top {
+transform: rotate(45deg);
+}
+.bin-button:hover {
+background-color: rgb(255, 0, 0);
+}
+.bin-button:active {
+transform: scale(0.9);
+}
+
+
+/* estilo para el calendario */
+.fc-daygrid-day--reserved {
+    background-color: #c75a5a !important; /* Color de fondo para fechas reservadas */
+    border-radius: 50%;
+    color: #ff0000 !important; /* Color de texto para fechas reservadas */
+    pointer-events: none; /* Deshabilita la selección de la fecha */
+}
+
+/* estilo para no mostrar el json */
+#json-container {
+    display: none;
+}
+
+/* estilo para no mostrar el calendario solo cuando se de clic */
+#calendario_container {
+    background-color: white;
+    border: 1px solid #111;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    max-width: 370px; /* Ajusta según tus necesidades */
+    padding: 10px;
+}
+
+#calendario {
+    max-width: 100%;
+    width: 360px;
+    height: auto;
+    border: white solid;
+    min-height: 220px; /* Asegura que el calendario tenga suficiente altura */
+}
+
+.fc .fc-daygrid-day {
+    height: 0.3rem !important; /* Ajusta la altura de cada celda del día si es necesario */
+    color: #111;
+}
+
+/* Cambiar el tamaño de la fuente del mes (barra superior) */
+.fc-toolbar-title {
+    font-size: 17px !important; /* Cambia este valor para ajustar el tamaño */
+    font-weight: bold;
+    color: #111 !important;
+}
+
+/* Cambiar el tamaño de la fuente de los días de la semana */
+.fc .fc-col-header-cell {
+    font-size: 12px !important;  /* Cambia el tamaño de la letra según tu preferencia */
+    color: #000000 !important;   /* Cambia el color a negro y fuerza su aplicación */
+    font-weight: normal;
+}
+   
+/* Reducir el tamaño de las celdas del calendario */
+.fc-daygrid-day {
+    width: 45px !important;  /* Ancho de las celdas */
+    font-size: 10px !important; /* Tamaño de la fuente */
+    margin-bottom: 0;        
+}
+
+/* Ajustar el encabezado de los días (Lunes, Martes, etc.) */
+.fc-col-header-cell {
+    height: 30px !important;  /* Altura de los encabezados */
+    font-size: 12px !important; /* Tamaño de la fuente */
+}
+
+
+/**** Servicios inactivos en gris *****/
+.service-box.inactivo {
+    background-color: #e0e0e0; /* Fondo gris claro */
+    color: #888; /* Texto gris */
+    pointer-events: none; /* Deshabilita la interacción */
+    border: 1px solid #ccc; /* Borde más claro */
+}
+
+.service-box.inactivo img {
+    opacity: 0.5; /* Imagen atenuada */
+}
+
+.text-muted p{
+    top: 50%;
+    left: 50%;
+}
+
+.service-box.inactivo .btn-seleccion {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}

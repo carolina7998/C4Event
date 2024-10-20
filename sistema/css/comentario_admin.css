@@ -1,0 +1,91 @@
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/*ESTILOS BOTON EDITAR*/
+
+.btn {
+    width: 100px;
+    justify-content: center;
+}
+
+
+/* Cambiar fuente y tamaño globalmente */
+body {
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a todo el documento */
+    font-size: 1rem; /* Tamaño de fuente global */
+}
+
+/* Cambiar la fuente y tamaño de la tabla */
+table {
+    font-family: "Lato", sans-serif; /* Aplica la fuente Lato a las tablas */
+    font-size: 1.05rem; /* Tamaño de la fuente en las tablas */
+    font-weight: 450;
+}
+
+/* Cambiar la fuente y tamaño de los encabezados de la tabla */
+table thead th {
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem; /* Tamaño de la fuente en los encabezados */
+    font-weight: bold;
+    
+}
+
+/* Cambiar la fuente y tamaño en botones */
+.btn {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+/* Cambiar la fuente y tamaño del modal */
+.modal-body {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: 530;
+}
+
+/* Personalizar el tamaño del título en el modal */
+.modal-title {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+/* Cambiar la fuente y tamaño de letra para el texto de mostrar cantidad de registros */
+.dataTables_wrapper .dataTables_info {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que prefieras */
+    font-size: 14px; /* Cambia el tamaño de letra según lo necesites */
+}
+
+/* Cambiar la fuente y tamaño de letra para el campo de búsqueda */
+.dataTables_wrapper .dataTables_filter label {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que prefieras */
+    font-size: 14px; /* Cambia el tamaño de letra según lo necesites */
+}
+
+/* Cambiar la fuente y tamaño de letra para el input de búsqueda */
+.dataTables_wrapper .dataTables_filter input {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que prefieras */
+    font-size: 14px; /* Cambia el tamaño de letra según lo necesites */
+}
+
+/* Cambiar la fuente y tamaño de letra para el botón de paginación */
+.dataTables_wrapper .dataTables_paginate a {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que prefieras */
+    font-size: 14px; /* Cambia el tamaño de letra según lo necesites */
+}
+
+/* Cambiar la fuente y tamaño de letra para el texto de la paginación */
+.dataTables_wrapper .dataTables_paginate {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que prefieras */
+    font-size: 14px; /* Cambia el tamaño de letra según lo necesites */
+}
